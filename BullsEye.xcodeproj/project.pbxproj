@@ -63,6 +63,7 @@
 			);
 			path = BullsEye;
 			sourceTree = "<group>";
+			wrapsLines = 0;
 		};
 /* End PBXGroup section */
 
@@ -304,6 +305,7 @@
 				D88B4BBE1F659C1500B1A9F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
