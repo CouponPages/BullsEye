@@ -41,7 +41,11 @@
 				D88B4BAC1F659C1500B1A9F4 /* BullsEye */,
 				D88B4BAB1F659C1500B1A9F4 /* Products */,
 			);
+			indentWidth = 3;
 			sourceTree = "<group>";
+			tabWidth = 3;
+			usesTabs = 1;
+			wrapsLines = 0;
 		};
 		D88B4BAB1F659C1500B1A9F4 /* Products */ = {
 			isa = PBXGroup;
