@@ -10,10 +10,22 @@ import UIKit
 
 class AboutViewController: UIViewController {
 
+	@IBOutlet weak var webView: UIWebView!
+	
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+		if let MyURL = Bundle.main.url(forResource: "BullsEye", withExtension: "html")
+		{
+			if let htmlData = try? Data(contentsOf: MyURL)
+			{
+				let BaseURL = URL(fileURLWithPath: Bundle.main.bundlePath)
+				webView.load(htmlData, mimeType: "text/html", textEncodingName: "UTF-8", baseURL: BaseURL)
+			}
+		}
     }
 
     override func didReceiveMemoryWarning() {
